@@ -1,0 +1,12 @@
+server:
+  port: 8883
+xxl:
+  job:
+    admin:
+      # xxl 管理带的地址
+      addresses: http://192.168.200.130:8888/xxl-job-admin
+    executor: #执行器
+      # 执行器的名字 （保证和页面配置的APPName一模一样）
+      appname: xxl-job-executor-sample
+      # 没有任何含义，但是不同服务器必须不一样
+      port: 9993
